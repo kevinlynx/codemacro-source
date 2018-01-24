@@ -1,5 +1,14 @@
-<!-- UY BEGIN -->
-<div id="uyan_frame"></div>
-<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=1537634"></script>
-<!-- UY END -->
-
+<div id="container"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  owner: 'kevinlynx',
+  repo: 'codemacro-source',
+  oauth: {
+    client_id: '887f210a1e0f6558ad3a',
+    client_secret: '964b45eb7ab29973e1ec3a3371e14b338033a1ce',
+  },
+})
+gitment.render('container')
+</script>
