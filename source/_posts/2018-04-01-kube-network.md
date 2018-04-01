@@ -202,6 +202,8 @@ $sudo iptables-save | grep KUBE-SEP-GDIX2RIKQIYS7RMI
 
 最终，封包发送到POD之一`10.244.1.56`。上面的过程，对着前面图的左半部分很容易理解。
 
+kubernetes中还提供了kube-dns，主要是为service clusterIP提供一个域名。每个service都可以按固定格式拼出一个域名，而kube-dns则负责解析这个域名，解析为service的clusterIP，实际网络数据传输流程还是同上。
+
 ## 总结
 
 熟悉kubernetes，几大组件的工作原理其实不难理解。而kubernetes网络模型显得更难，尤其是要结合各种工具、命令去实践时，很容易与理论脱节。一旦梳理通彻整个链路，回头看时就会发现也就那么回事。当然，上面提到的各个技术点，深入下去了解还是有很多内容的。
